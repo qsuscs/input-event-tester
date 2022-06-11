@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interface>
+  <object class="GTKApplicationWindow" id="window">
+    <property name="title" translatable="yes">Input event tester</property>
+    <child>
+      <object class="GtkBox">
+	<property name="orientation">vertical</property>
+	<child>
+	  <object class="GtkCenterBox">
+	    <child type="start">
+	      <object class="GtkLabel">
+		<property name="label" translatable="yes">Device</property>
+	      </object>
+	    </child>
+	    <child type="center">
+	      <object class="GtkComboBoxText" id="cbt-device">
+		<property name="hexpand">true</property>
+	      </object>
+	    </child>
+	    <child type="end">
+	      <object class="GtkBox">
+		<property name="orientation">horizontal</property>
+		<child>
+		  <object class="GtkButton" id="refresh">
+		    <property name="icon-name">view-refresh-symbolic</property>
+		  </object>
+		</child>
+	      </object>
+	    </child>
+	  </object>
+	</child>
+      </object>
+    </child>
+  </object>
+</interface>
